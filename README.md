@@ -1,4 +1,4 @@
-# Husky Track  
+# 🐾 Husky Track  
 ### *AI-Powered Course Navigator & Academic Advisor*
 
 [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
@@ -11,7 +11,7 @@ It transforms complex curriculum data into a **conversational, AI-driven experie
 
 ---
 
-## Motivation
+## 🎯 Motivation
 
 UW students navigate:
 - Hundreds of courses  
@@ -25,7 +25,7 @@ Husky Track unifies this data and lets students ask **natural language questions
 
 ---
 
-## Security Disclosure
+## ⚠️ Security Disclosure
 
 > **Proof of Concept Only**
 
@@ -37,7 +37,7 @@ This repository is intended for **design demonstration and architectural referen
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff', 'primaryColor': '#ffffff', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#ffffff', 'clusterBkg': '#fafafa', 'clusterBorder': '#e5e7eb', 'lineColor': '#4B0082', 'fontSize': '14px'}}}%%
@@ -72,19 +72,19 @@ graph LR
 
 ---
 
-## Architecture Highlights
+## 🧠 Architecture Highlights
 
-### Offline Data Ingestion
+### 📦 Offline Data Ingestion
 - Custom Python scraper aggregates:
   - UW Course Catalog
   - 1,500+ Rate My Professor reviews
 - Data normalized into a structured **JSON context file**
 
-### Context Injection (No Vector DB)
+### 🧩 Context Injection (No Vector DB)
 - Entire curated dataset is injected directly into the model context
 - Enables full-curriculum reasoning without retrieval pipelines
 
-### Serverless Backend
+### ☁️ Serverless Backend
 - AWS Lambda orchestrates:
   - Authentication checks
   - Prompt construction
@@ -94,38 +94,36 @@ graph LR
 
 ## 🛠️ Tech Stack
 
-| Component        | Technology                  | Purpose |
-|------------------|-----------------------------|--------|
-| Frontend         | React, Javascript           | Student chat interface |
-| Authentication  | AWS Cognito                 | Secure user identity |
-| AI Model         | AWS Bedrock (Claude)      | Reasoning & recommendations |
-| Compute          | AWS Lambda                  | Serverless request handling |
-| Data Engineering | Python       | Web scraping & normalization |
+| Component        | Technology              | Purpose |
+|------------------|--------------------------|---------|
+| Frontend         | React, JavaScript        | Student chat interface |
+| Authentication  | AWS Cognito              | Secure user identity |
+| AI Model         | AWS Bedrock (Claude)     | Reasoning & recommendations |
+| Compute          | AWS Lambda               | Serverless request handling |
+| Data Engineering | Python                   | Web scraping & normalization |
 
 ---
 
-## Key Features
+## 🚀 Key Features
 
-### Smart Course Recommendations
+### 🎓 Smart Course Recommendations
 - Filters by prerequisites, difficulty, and professor ratings
 - Suggests realistic course options
 
-### Natural Language Search
+### 💬 Natural Language Search
 - Conversational interface
 - No manual filtering required
 
-### Integrated Professor Ratings
+### ⭐ Integrated Professor Ratings
 - Merges official descriptions with student sentiment
 - Produces holistic recommendations
 
 ---
 
-## Interface Preview
+## 📱 Interface Preview
 
 <div>
   <img width="150" height="435" alt="Mobile View" src="https://github.com/user-attachments/assets/31936ec1-961e-4a14-87ad-bfe1ca5f5f21" />
   <img width="350" height="301" alt="Dashboard" src="https://github.com/user-attachments/assets/1bf68a33-8ea0-4926-9d19-3a60acf07741" />
   <img width="350" height="305" alt="Chat Interface" src="https://github.com/user-attachments/assets/a137896a-d1e5-463a-a28f-87decf029bfd" />
 </div>
-
----
